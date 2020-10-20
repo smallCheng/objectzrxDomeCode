@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7F684C0F-5D44-4B27-8DA1-9E14A2AB57D8}</ProjectGuid>
+    <RootNamespace>ZrxTemplate1</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+    <ProjectName>ZWCAD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="..\Zrx2020\Include.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="..\Zrx2020\Include.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="..\Zrx2020\Include.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="..\Zrx2020\Include.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetExt>.zrx</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetExt>.zrx</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetExt>.zrx</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetExt>.zrx</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PreprocessorDefinitions>_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/Zm256 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link />
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PreprocessorDefinitions>_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/Zm256 %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link />
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Desktop\ZWCAD二次开发学习Code\10第十章：三维\TriangleEntity\x64\Debug;D:\Desktop\ZWCAD二次开发学习Code\10第十章：三维\CustomObjectDB\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ZwZrx.lib;CustomObjectDB.lib;TriangleEntity.lib;</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/Zm256 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/Zm256 %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\ZrxTemplate1.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="acrxEntryPoint.cpp" />
+    <ClCompile Include="AppDirectoryUtil.cpp" />
+    <ClCompile Include="ArcBlockJig.cpp" />
+    <ClCompile Include="ArcBlockJigEntity.cpp" />
+    <ClCompile Include="ArcUtil.cpp" />
+    <ClCompile Include="BlockUtil.cpp" />
+    <ClCompile Include="CircleUtil.cpp" />
+    <ClCompile Include="ConvertUtil.cpp" />
+    <ClCompile Include="DimensionUtil.cpp" />
+    <ClCompile Include="DocData.cpp" />
+    <ClCompile Include="DoubleClickCircle.cpp" />
+    <ClCompile Include="DrawSquareJig.cpp" />
+    <ClCompile Include="DwgDatabaseUtil.cpp" />
+    <ClCompile Include="EllipseUtil.cpp" />
+    <ClCompile Include="EntInfoTipHandler.cpp" />
+    <ClCompile Include="EntityUtil.cpp" />
+    <ClCompile Include="GePointUtil.cpp" />
+    <ClCompile Include="GeRectangleUtil.cpp" />
+    <ClCompile Include="GetColorDlg.cpp" />
+    <ClCompile Include="GetInputUtil.cpp" />
+    <ClCompile Include="HatchUtil.cpp" />
+    <ClCompile Include="LayerUtil.cpp" />
+    <ClCompile Include="LineUtil.cpp" />
+    <ClCompile Include="MathUtil.cpp" />
+    <ClCompile Include="PolylineUtil.cpp" />
+    <ClCompile Include="RegionUtil.cpp" />
+    <ClCompile Include="SelectUtil.cpp" />
+    <ClCompile Include="SplineUtil.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StringUtil.cpp" />
+    <ClCompile Include="TextFileUtil.cpp" />
+    <ClCompile Include="TextStyleUtil.cpp" />
+    <ClCompile Include="TextUtil.cpp" />
+    <ClCompile Include="ViewUtil.cpp" />
+    <ClCompile Include="ZrxTemplate1.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppDirectoryUtil.h" />
+    <ClInclude Include="ArcBlockJig.h" />
+    <ClInclude Include="ArcBlockJigEntity.h" />
+    <ClInclude Include="ArcUtil.h" />
+    <ClInclude Include="BlockUtil.h" />
+    <ClInclude Include="CircleUtil.h" />
+    <ClInclude Include="ConvertUtil.h" />
+    <ClInclude Include="DimensionUtil.h" />
+    <ClInclude Include="DocData.h" />
+    <ClInclude Include="DoubleClickCircle.h" />
+    <ClInclude Include="DrawSquareJig.h" />
+    <ClInclude Include="DwgDatabaseUtil.h" />
+    <ClInclude Include="EllipseUtil.h" />
+    <ClInclude Include="EntInfoTipHandler.h" />
+    <ClInclude Include="EntityUtil.h" />
+    <ClInclude Include="GePointUtil.h" />
+    <ClInclude Include="GeRectangleUtil.h" />
+    <ClInclude Include="GetColorDlg.h" />
+    <ClInclude Include="GetInputUtil.h" />
+    <ClInclude Include="HatchUtil.h" />
+    <ClInclude Include="LayerUtil.h" />
+    <ClInclude Include="LineUtil.h" />
+    <ClInclude Include="MathUtil.h" />
+    <ClInclude Include="PolylineUtil.h" />
+    <ClInclude Include="RegionUtil.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SelectUtil.h" />
+    <ClInclude Include="SplineUtil.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StringUtil.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TextFileUtil.h" />
+    <ClInclude Include="TextStyleUtil.h" />
+    <ClInclude Include="TextUtil.h" />
+    <ClInclude Include="ViewUtil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ZrxTemplate1.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

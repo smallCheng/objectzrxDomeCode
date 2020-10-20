@@ -1,0 +1,5 @@
+LIBRARY	""
+
+EXPORTS
+		zcrxEntryPoint		PRIVATE
+		zcrxGetApiVersion	PRIVATE

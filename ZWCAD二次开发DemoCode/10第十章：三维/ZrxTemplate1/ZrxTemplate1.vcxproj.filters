@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{3744b972-9218-456a-8fdf-c63be56c89fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Document">
+      <UniqueIdentifier>{16298b58-d2d4-4459-95eb-4e468a72e37f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Entity">
+      <UniqueIdentifier>{77fb5a3f-e56d-47fa-94b8-d7095309435a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Geometry">
+      <UniqueIdentifier>{1733f92e-2ad4-4ef4-829c-b203d6da0d5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\IO">
+      <UniqueIdentifier>{ee58410a-4b1a-4a24-8c2a-2fd54ebaa365}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Other">
+      <UniqueIdentifier>{cc3b23f7-83c5-4aa9-b038-412998d44d96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\SymbolTable">
+      <UniqueIdentifier>{8034405a-1ea9-45c7-a48a-5cb68b7cc5a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DoubleClickEdit">
+      <UniqueIdentifier>{052d2d8b-fa74-4f98-8b61-1858e89fca5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntInfoTip">
+      <UniqueIdentifier>{7b75219c-78eb-43ee-b4ff-1f73ab204059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JIG">
+      <UniqueIdentifier>{3be2fb19-88e1-4e39-be04-0f428de2edf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Interaction">
+      <UniqueIdentifier>{95b0b4eb-5ce6-4d79-b10f-b7b91d2bc04a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\ZrxTemplate1.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ZrxTemplate1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DocData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="acrxEntryPoint.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DwgDatabaseUtil.cpp">
+      <Filter>Common\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="ArcUtil.cpp">
+      <Filter>Common\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockUtil.cpp">
+      <Filter>Common\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="CircleUtil.cpp">
+      <Filter>Common\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="DimensionUtil.cpp">
+      <Filter>Common\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="EllipseUtil.cpp">
+      <Filter>Common\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityUtil.cpp">
+      <Filter>Common\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="HatchUtil.cpp">
+      <Filter>Common\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="LineUtil.cpp">
+      <Filter>Common\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="PolylineUtil.cpp">
+      <Filter>Common\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="RegionUtil.cpp">
+      <Filter>Common\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="SplineUtil.cpp">
+      <Filter>Common\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="TextUtil.cpp">
+      <Filter>Common\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="GePointUtil.cpp">
+      <Filter>Common\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="GeRectangleUtil.cpp">
+      <Filter>Common\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="MathUtil.cpp">
+      <Filter>Common\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="GetInputUtil.cpp">
+      <Filter>Common\Interaction</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectUtil.cpp">
+      <Filter>Common\Interaction</Filter>
+    </ClCompile>
+    <ClCompile Include="TextFileUtil.cpp">
+      <Filter>Common\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="LayerUtil.cpp">
+      <Filter>Common\SymbolTable</Filter>
+    </ClCompile>
+    <ClCompile Include="TextStyleUtil.cpp">
+      <Filter>Common\SymbolTable</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewUtil.cpp">
+      <Filter>Common\SymbolTable</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertUtil.cpp">
+      <Filter>Common\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="StringUtil.cpp">
+      <Filter>Common\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="DoubleClickCircle.cpp">
+      <Filter>DoubleClickEdit</Filter>
+    </ClCompile>
+    <ClCompile Include="GetColorDlg.cpp">
+      <Filter>DoubleClickEdit</Filter>
+    </ClCompile>
+    <ClCompile Include="EntInfoTipHandler.cpp">
+      <Filter>EntInfoTip</Filter>
+    </ClCompile>
+    <ClCompile Include="ArcBlockJig.cpp">
+      <Filter>JIG</Filter>
+    </ClCompile>
+    <ClCompile Include="ArcBlockJigEntity.cpp">
+      <Filter>JIG</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawSquareJig.cpp">
+      <Filter>JIG</Filter>
+    </ClCompile>
+    <ClCompile Include="AppDirectoryUtil.cpp">
+      <Filter>Common\IO</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DocData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DwgDatabaseUtil.h">
+      <Filter>Common\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="ArcUtil.h">
+      <Filter>Common\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockUtil.h">
+      <Filter>Common\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="CircleUtil.h">
+      <Filter>Common\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="DimensionUtil.h">
+      <Filter>Common\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="EllipseUtil.h">
+      <Filter>Common\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityUtil.h">
+      <Filter>Common\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="HatchUtil.h">
+      <Filter>Common\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="LineUtil.h">
+      <Filter>Common\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="PolylineUtil.h">
+      <Filter>Common\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="RegionUtil.h">
+      <Filter>Common\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="SplineUtil.h">
+      <Filter>Common\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="TextUtil.h">
+      <Filter>Common\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="GePointUtil.h">
+      <Filter>Common\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="GeRectangleUtil.h">
+      <Filter>Common\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="MathUtil.h">
+      <Filter>Common\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="GetInputUtil.h">
+      <Filter>Common\Interaction</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectUtil.h">
+      <Filter>Common\Interaction</Filter>
+    </ClInclude>
+    <ClInclude Include="TextFileUtil.h">
+      <Filter>Common\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="LayerUtil.h">
+      <Filter>Common\SymbolTable</Filter>
+    </ClInclude>
+    <ClInclude Include="TextStyleUtil.h">
+      <Filter>Common\SymbolTable</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewUtil.h">
+      <Filter>Common\SymbolTable</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvertUtil.h">
+      <Filter>Common\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="StringUtil.h">
+      <Filter>Common\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleClickCircle.h">
+      <Filter>DoubleClickEdit</Filter>
+    </ClInclude>
+    <ClInclude Include="GetColorDlg.h">
+      <Filter>DoubleClickEdit</Filter>
+    </ClInclude>
+    <ClInclude Include="EntInfoTipHandler.h">
+      <Filter>EntInfoTip</Filter>
+    </ClInclude>
+    <ClInclude Include="ArcBlockJig.h">
+      <Filter>JIG</Filter>
+    </ClInclude>
+    <ClInclude Include="ArcBlockJigEntity.h">
+      <Filter>JIG</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawSquareJig.h">
+      <Filter>JIG</Filter>
+    </ClInclude>
+    <ClInclude Include="AppDirectoryUtil.h">
+      <Filter>Common\IO</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ZrxTemplate1.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
